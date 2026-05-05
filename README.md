@@ -1,6 +1,7 @@
 # Flask Portfolio Website
 
-A personal portfolio website built with Python and Flask to showcase my projects, skills, and contact information.
+A personal portfolio website built with Python and Flask to highlight my software projects, technical skills, and internship readiness.
+
 
 ## Features
 
