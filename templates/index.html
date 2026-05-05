@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aksha Khadgi | Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <div class="logo">Aksha Khadgi</div>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="hero">
+        <h1>Hi, I'm <span>Aksha Khadgi</span> 👋</h1>
+        <p>Computer & Information Sciences Student at Huston-Tillotson University</p>
+        <p>Aspiring Software Engineer | Austin, TX</p>
+        <div class="hero-buttons">
+            <a href="#projects" class="btn">View Projects</a>
+            <a href="#contact" class="btn outline">Contact Me</a>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I'm an international Computer Science student from Nepal, currently studying at Huston-Tillotson University in Austin, TX. I have hands-on experience in Python, Java, PHP, and SQL, and I'm passionate about building meaningful software solutions. I'm actively seeking a software engineering internship where I can contribute and grow.</p>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">Python</div>
+            <div class="skill-card">Java</div>
+            <div class="skill-card">PHP</div>
+            <div class="skill-card">C++</div>
+            <div class="skill-card">SQL</div>
+            <div class="skill-card">MySQL</div>
+            <div class="skill-card">Flask</div>
+            <div class="skill-card">Git & GitHub</div>
+            <div class="skill-card">Excel</div>
+            <div class="skill-card">Data Analytics</div>
+        </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>Gender Pay Gap Visualizer</h3>
+                <p>A data visualization tool built in Java that analyzes gender wage disparities across industries using real-world datasets.</p>
+                <a href="https://github.com/akshakhdg/gender-pay-gap-visualizer" target="_blank" class="btn">GitHub</a>
+            </div>
+            <div class="project-card">
+                <h3>Smart Stock Advisor</h3>
+                <p>A Python financial simulation tool that evaluates stocks based on user-defined risk tolerance and investment goals.</p>
+                <a href="https://github.com/akshakhdg/Smart_Stock_Advisor" target="_blank" class="btn">GitHub</a>
+            </div>
+            <div class="project-card">
+                <h3>Portfolio Website</h3>
+                <p>This personal portfolio website built with Python Flask and HTML/CSS to showcase my projects and skills.</p>
+                <a href="#" class="btn">Live</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Open to internship opportunities!</p>
+        <div class="contact-links">
+            <a href="mailto:akshakhdg@gmail.com" class="btn">Email Me</a>
+            <a href="http://linkedin.com/in/akhadgi10" target="_blank" class="btn outline">LinkedIn</a>
+            <a href="https://github.com/akshakhdg" target="_blank" class="btn outline">GitHub</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Aksha Khadgi. Built with Flask </p>
+    </footer>
+
+</body>
+</html>
