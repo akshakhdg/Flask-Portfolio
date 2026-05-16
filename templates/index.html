@@ -1,99 +1,221 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aksha Khadgi | Portfolio</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-</head>
-<body>
-
-    <!-- NAVBAR -->
-    <nav>
+<!DOCTYPE HTML>
+<html="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Aksha Khadgi | Data & IT Portfolio</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+    </head>
+    <body>
+        <!-- NAVBAR -->
+         <nav class="navbar">
         <div class="logo">Aksha Khadgi</div>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
 
-    <!-- HERO SECTION -->
-    <section id="hero">
-        <h1>Hi, I'm <span>Aksha Khadgi</span> 👋</h1>
-        <p>Computer & Information Sciences Student at Huston-Tillotson University</p>
-        <p>Aspiring Software Engineer | Austin, TX</p>
-        <div class="hero-buttons">
-            <a href="#projects" class="btn">View Projects</a>
-            <a href="#contact" class="btn outline">Contact Me</a>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        
+        </div>
+        </nav>
+          <!-- HERO SECTION -->
+         <section class="hero">
+        <div class="hero-content">
+            <p class="tagline">Computer Science Student • Data & IT Analyst in Progress</p>
+
+            <h1>Building practical tech solutions with data, systems, and purpose.</h1>
+
+            <p class="hero-text">
+                I’m a Computer and Information Sciences student focused on building real-world projects in
+                data analytics, IT systems, backend development, and web applications.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#projects" class="btn primary-btn">View Projects</a>
+                <a href="https://github.com/akshakhdg" target="_blank" class="btn secondary-btn">GitHub</a>
+                <a href="https://linkedin.com/in/akhadgi10" target="_blank" class="btn secondary-btn">LinkedIn</a>
+                <a href="mailto:akshakhadgi47@gmail.com" class="btn secondary-btn">Request Resume</a>
+            </div>
+        </div>
+
+        <div class="hero-card">
+            <h3>Currently Building</h3>
+            <p>CyberShield Analytics</p>
+            <span>Cybersecurity Incident Analytics Dashboard</span>
+        </div>
+    </section>   
+         <!-- ABOUT SECTION -->
+    <section id="about" class="section">
+        <div class="section-heading">
+            <p>About Me</p>
+            <h2>Focused on practical technology and real-world problem solving.</h2>
+        </div>
+
+        <div class="about-card">
+            <p>
+                I’m Aksha Khadgi, a Computer and Information Sciences student at Huston-Tillotson University.
+                I’m building my skills through projects that combine software development, data analysis,
+                IT workflows, and business problem-solving.
+            </p>
+
+            <p>
+                My goal is to grow into a strong Data Analyst, IT Analyst, or Software-focused intern by building
+                projects that are useful, well-documented, and connected to real workplace problems.
+            </p>
         </div>
     </section>
 
-    <!-- ABOUT SECTION -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I'm an international Computer Science student from Nepal, currently studying at Huston-Tillotson University in Austin, TX. I have hands-on experience in Python, Java, PHP, and SQL, and I'm passionate about building meaningful software solutions. I'm actively seeking a software engineering internship where I can contribute and grow.</p>
-    </section>
+         <!-- SKILLS SECTION -->
+    <section id="skills" class="section">
+        <div class="section-heading">
+            <p>Skills</p>
+            <h2>Technical skills I’m developing and applying.</h2>
+        </div>
 
-    <!-- SKILLS SECTION -->
-    <section id="skills">
-        <h2>Skills</h2>
         <div class="skills-grid">
-            <div class="skill-card">Python</div>
-            <div class="skill-card">Java</div>
-            <div class="skill-card">PHP</div>
-            <div class="skill-card">C++</div>
-            <div class="skill-card">SQL</div>
-            <div class="skill-card">MySQL</div>
-            <div class="skill-card">Flask</div>
-            <div class="skill-card">Git & GitHub</div>
-            <div class="skill-card">Excel</div>
-            <div class="skill-card">Data Analytics</div>
+            <div class="skill-box">
+                <h3>Programming</h3>
+                <p>Python, Java, PHP, C++, SQL</p>
+            </div>
+
+            <div class="skill-box">
+                <h3>Data & Databases</h3>
+                <p>SQLite, MySQL, SQL queries, data analysis fundamentals</p>
+            </div>
+
+            <div class="skill-box">
+                <h3>Web Development</h3>
+                <p>Flask, HTML, CSS, responsive layouts</p>
+            </div>
+
+            <div class="skill-box">
+                <h3>Tools</h3>
+                <p>Git, GitHub, VS Code, Microsoft Excel, Microsoft Office</p>
+            </div>
         </div>
     </section>
 
     <!-- PROJECTS SECTION -->
-    <section id="projects">
-        <h2>Projects</h2>
+    <section id="projects" class="section">
+        <div class="section-heading">
+            <p>Featured Projects</p>
+            <h2>Projects built around software, data, and IT workflows.</h2>
+        </div>
+
         <div class="projects-grid">
-            <div class="project-card">
-                <h3>Gender Pay Gap Visualizer</h3>
-                <p>A data visualization tool built in Java that analyzes gender wage disparities across industries using real-world datasets.</p>
-                <a href="https://github.com/akshakhdg/gender-pay-gap-visualizer" target="_blank" class="btn">GitHub</a>
+
+            <div class="project-card featured">
+                <div class="project-top">
+                    <span class="project-level">Full-Stack</span>
+                    <span class="project-type">IT Systems</span>
+                </div>
+
+                <h3>ResolveIT</h3>
+                <p>
+                    A Flask-based IT help desk ticketing system for submitting, tracking, updating,
+                    resolving, searching, and deleting support tickets through an admin dashboard.
+                </p>
+
+                <div class="tech-stack">
+                    <span>Python</span>
+                    <span>Flask</span>
+                    <span>SQLite</span>
+                    <span>HTML</span>
+                    <span>CSS</span>
+                </div>
+
+                <a href="https://github.com/akshakhdg/ResolveIT" target="_blank" class="project-link">View GitHub</a>
             </div>
+
             <div class="project-card">
+                <div class="project-top">
+                    <span class="project-level">Python App</span>
+                    <span class="project-type">Finance</span>
+                </div>
+
                 <h3>Smart Stock Advisor</h3>
-                <p>A Python financial simulation tool that evaluates stocks based on user-defined risk tolerance and investment goals.</p>
-                <a href="https://github.com/akshakhdg/Smart_Stock_Advisor" target="_blank" class="btn">GitHub</a>
+                <p>
+                    A Python financial simulation tool that evaluates stock-related inputs based on
+                    user-defined risk tolerance and investment goals.
+                </p>
+
+                <div class="tech-stack">
+                    <span>Python</span>
+                    <span>Logic</span>
+                    <span>Finance</span>
+                </div>
+
+                <a href="https://github.com/akshakhdg/Smart_Stock_Advisor" target="_blank" class="project-link">View GitHub</a>
             </div>
+
             <div class="project-card">
+                <div class="project-top">
+                    <span class="project-level">Data Project</span>
+                    <span class="project-type">Data</span>
+                </div>
+
+                <h3>Gender Pay Gap Visualizer</h3>
+                <p>
+                    A Java-based data visualization project analyzing gender wage disparities across
+                    industries using real-world datasets.
+                </p>
+
+                <div class="tech-stack">
+                    <span>Java</span>
+                    <span>Data</span>
+                    <span>Visualization</span>
+                </div>
+
+                <a href="https://github.com/akshakhdg/gender-pay-gap-visualizer" target="_blank" class="project-link">View GitHub</a>
+            </div>
+
+            <div class="project-card">
+                <div class="project-top">
+                    <span class="project-level">Web App</span>
+                    <span class="project-type">Web</span>
+                </div>
+
                 <h3>Portfolio Website</h3>
-                <p>This personal portfolio website built with Python Flask and HTML/CSS to showcase my projects and skills.</p>
-                <a href="#" class="btn">Live</a>
+                <p>
+                    A personal Flask portfolio website designed to showcase projects, technical skills,
+                    resume links, and contact information.
+                </p>
+
+                <div class="tech-stack">
+                    <span>Flask</span>
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>GitHub</span>
+                </div>
+
+                <a href="https://github.com/akshakhdg/Flask-Portfolio" target="_blank" class="project-link">View GitHub</a>
             </div>
-            <div class="project-card">
-    <h3>ResolveIT</h3>
-    <p>A Flask-based IT help desk ticketing system for submitting, tracking, updating, and resolving support tickets through an admin dashboard.</p>
-    <a href="https://github.com/akshakhdg/ResolveIT" target="_blank" class="btn">GitHub</a>
-</div>
+
         </div>
     </section>
 
     <!-- CONTACT SECTION -->
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Open to internship opportunities!</p>
-        <div class="contact-links">
-            <a href="mailto:akshakhdg@gmail.com" class="btn">Email Me</a>
-            <a href="http://linkedin.com/in/akhadgi10" target="_blank" class="btn outline">LinkedIn</a>
-            <a href="https://github.com/akshakhdg" target="_blank" class="btn outline">GitHub</a>
+    <section id="contact" class="section contact-section">
+        <div class="section-heading">
+            <p>Contact</p>
+            <h2>Open to internship opportunities.</h2>
+        </div>
+
+        <p class="contact-text">
+            I’m currently looking for Data Analyst, IT Analyst, Software Development, and Technical Support internship opportunities.
+        </p>
+
+        <div class="contact-buttons">
+            <a href="mailto:akshakhadgi47@gmail.com" class="btn primary-btn">Email Me</a>
+            <a href="https://linkedin.com/in/akhadgi10" target="_blank" class="btn secondary-btn">LinkedIn</a>
+            <a href="https://github.com/akshakhdg" target="_blank" class="btn secondary-btn">GitHub</a>
         </div>
     </section>
 
+    <!-- FOOTER -->
     <footer>
-        <p>© 2025 Aksha Khadgi. Built with Flask </p>
-    </footer>
-
-</body>
+        <p>© 2026 Aksha Khadgi. Built with Flask, HTML, CSS, and purpose.</p>
+    </footer>    
+    </body>
 </html>
